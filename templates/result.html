@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3>Predictions</h3>
+        <table>
+            <tbody>
+                <th>Air Quality Index</th>
+                {% for item in prediction %}
+                <tr>
+                    <td>{{item}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
